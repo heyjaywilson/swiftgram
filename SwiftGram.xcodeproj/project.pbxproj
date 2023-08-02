@@ -46,6 +46,7 @@
 		6987A9862A79E54500F5DC84 /* SwiftGramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftGramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6987A98A2A79E54500F5DC84 /* SwiftGramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGramUITests.swift; sourceTree = "<group>"; };
 		6987A98C2A79E54500F5DC84 /* SwiftGramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6987A9992A79E65100F5DC84 /* SwiftGramKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SwiftGramKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 		6987A9612A79E54200F5DC84 = {
 			isa = PBXGroup;
 			children = (
+				6987A9992A79E65100F5DC84 /* SwiftGramKit */,
 				6987A96C2A79E54200F5DC84 /* SwiftGram */,
 				6987A97F2A79E54500F5DC84 /* SwiftGramTests */,
 				6987A9892A79E54500F5DC84 /* SwiftGramUITests */,
