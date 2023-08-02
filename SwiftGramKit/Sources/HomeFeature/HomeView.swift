@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoriesFeature
 
 public struct HomeView: View {
     public init() { }
@@ -13,9 +14,7 @@ public struct HomeView: View {
     public var body: some View {
         NavigationStack {
             VStack {
-                HStack {
-                    Text("Stories go here")
-                }
+                StoriesView()
                 Text("Home feed is here")
                 Spacer()
             }

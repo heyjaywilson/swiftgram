@@ -15,6 +15,9 @@ let package = Package(
             name: "HomeFeature",
             targets: ["HomeFeature"]),
         .library(
+            name: "StoriesFeature",
+            targets: ["StoriesFeature"]),
+        .library(
             name: "SwiftGramKit",
             targets: ["SwiftGramKit"]),
     ],
@@ -25,7 +28,10 @@ let package = Package(
             name: "AppCore",
             dependencies: ["HomeFeature"]),
         .target(
-            name: "HomeFeature"),
+            name: "HomeFeature",
+        dependencies: ["StoriesFeature"]),
+        .target(
+            name: "StoriesFeature"),
         .target(
             name: "SwiftGramKit"),
         .testTarget(
