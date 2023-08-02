@@ -12,6 +12,9 @@ let package = Package(
             name: "AppCore",
             targets: ["AppCore"]),
         .library(
+            name: "HomeFeature",
+            targets: ["HomeFeature"]),
+        .library(
             name: "SwiftGramKit",
             targets: ["SwiftGramKit"]),
     ],
@@ -19,7 +22,10 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "AppCore"),
+            name: "AppCore",
+            dependencies: ["HomeFeature"]),
+        .target(
+            name: "HomeFeature"),
         .target(
             name: "SwiftGramKit"),
         .testTarget(
