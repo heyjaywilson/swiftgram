@@ -7,6 +7,7 @@
 
 import SwiftUI
 import StoriesFeature
+import FeedFeature
 
 public struct HomeView: View {
     public init() { }
@@ -15,7 +16,7 @@ public struct HomeView: View {
         NavigationStack {
             VStack {
                 StoriesView()
-                Text("Home feed is here")
+                FeedFeatureView()
                 Spacer()
             }
             .toolbar{

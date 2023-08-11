@@ -8,7 +8,6 @@
 import SwiftUI
 
 public struct StoriesView: View {
-    private let imageWidth: CGFloat = 64
 
     public init() { }
 
@@ -16,28 +15,16 @@ public struct StoriesView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 ForEach(0..<100) { index in
-                    Button {
-                        print("Do something with this photo")
-                    } label: {
-                        VStack(spacing: 8) {
-                            Image(systemName: "person.circle.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: imageWidth)
-                                .padding(.all, 4)
-                                .overlay {
-                                    Circle()
-                                        .fill(Color.clear)
-                                        .stroke(.black, style: .init(lineWidth: 1))
-                                }
-                            Text("heyjaywilson")
-                                .font(.footnote)
-                                .lineLimit(1)
-                                .truncationMode(.tail)
-                        }
+                    if index % 3 == 0 {
+                        StorySelectComponent(storyStatus: .new, userImage: "person.circle.fill", userName: "heyjaywilson")
+                                .padding(.trailing, 8)
+                    } else if index % 3 == 1 {
+                        StorySelectComponent(storyStatus: .seen, userImage: "person.circle.fill", userName: "thorgi")
+                            .padding(.trailing, 8)
+                    } else {
+                        StorySelectComponent(storyStatus: .closeFriends, userImage: "person.circle.fill", userName: "dobby")
+                            .padding(.trailing, 8)
                     }
-                    .frame(width: imageWidth+4)
-                    .padding(.trailing, 8)
                 }
             }
         }
