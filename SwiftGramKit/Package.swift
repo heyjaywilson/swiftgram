@@ -12,6 +12,9 @@ let package = Package(
             name: "AppCore",
             targets: ["AppCore"]),
         .library(
+            name: "FeedFeature",
+            targets: ["FeedFeature"]),
+        .library(
             name: "HomeFeature",
             targets: ["HomeFeature"]),
         .library(
@@ -28,8 +31,12 @@ let package = Package(
             name: "AppCore",
             dependencies: ["HomeFeature"]),
         .target(
+            name: "FeedFeature"
+        ),
+        .target(
             name: "HomeFeature",
-        dependencies: ["StoriesFeature"]),
+            dependencies: ["StoriesFeature", "FeedFeature"]
+        ),
         .target(
             name: "StoriesFeature"),
         .target(
