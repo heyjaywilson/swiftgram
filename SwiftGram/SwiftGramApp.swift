@@ -7,13 +7,14 @@
 
 import SwiftUI
 import SwiftData
+import AppCore
 
 @main
 struct SwiftGramApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppCoreView()
         }
         .modelContainer(for: Item.self)
     }

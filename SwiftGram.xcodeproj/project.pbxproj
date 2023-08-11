@@ -15,6 +15,7 @@
 		6987A9812A79E54500F5DC84 /* SwiftGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6987A9802A79E54500F5DC84 /* SwiftGramTests.swift */; };
 		6987A98B2A79E54500F5DC84 /* SwiftGramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6987A98A2A79E54500F5DC84 /* SwiftGramUITests.swift */; };
 		6987A98D2A79E54500F5DC84 /* SwiftGramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6987A98C2A79E54500F5DC84 /* SwiftGramUITestsLaunchTests.swift */; };
+		69DC43272A86D4E4002794CD /* AppCore in Frameworks */ = {isa = PBXBuildFile; productRef = 69DC43262A86D4E4002794CD /* AppCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DC43272A86D4E4002794CD /* AppCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,7 @@
 				6987A97F2A79E54500F5DC84 /* SwiftGramTests */,
 				6987A9892A79E54500F5DC84 /* SwiftGramUITests */,
 				6987A96B2A79E54200F5DC84 /* Products */,
+				69DC43252A86D4E4002794CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +135,13 @@
 			path = SwiftGramUITests;
 			sourceTree = "<group>";
 		};
+		69DC43252A86D4E4002794CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +158,9 @@
 			dependencies = (
 			);
 			name = SwiftGram;
+			packageProductDependencies = (
+				69DC43262A86D4E4002794CD /* AppCore */,
+			);
 			productName = SwiftGram;
 			productReference = 6987A96A2A79E54200F5DC84 /* SwiftGram.app */;
 			productType = "com.apple.product-type.application";
@@ -594,6 +607,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		69DC43262A86D4E4002794CD /* AppCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6987A9622A79E54200F5DC84 /* Project object */;
 }
